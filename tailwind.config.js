@@ -15,6 +15,8 @@ export default {
         extend: {
             colors: {
                 primary: {
+                    300: '#355EC0',
+                    400: '#1251E8',
                     500: '#050E2D',
                     600: '#03091B'
                 }
@@ -24,5 +26,7 @@ export default {
             },
         },
     },
-    plugins: [],
+    plugins: [
+        require('tailwindcss-animated'),
+    ],
 };

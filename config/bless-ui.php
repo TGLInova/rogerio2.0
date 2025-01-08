@@ -23,6 +23,7 @@ return [
             'base'   => ['px-5 py-2 duration-500 inline-flex outline-none', 'rounded-xl'],
             'variants' => [
                 'normal'    => 'bg-neutral-200 text-neutral-600',
+                'primary-400' => 'bg-primary-400 text-white border shadow-[0_0_7px_2px] shadow-primary-400',
                 'primary'   => 'bg-primary-500 hover:bg-primary text-white border',
             ]
         ],
@@ -160,7 +161,9 @@ return [
             'base' => [
                 'text-3xl',
             ],
-            'variants' => []
+            'variants' => [
+                'normal' => 'font-semibold'
+            ]
         ],
 
         'h3' => [
