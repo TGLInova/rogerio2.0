@@ -4,9 +4,9 @@
             <x-ui::h2>
                 Veja o que as pessoas impactadas dizem
             </x-ui::h2>
-            <div class="text-[8.5rem] font-bold leading-none -mb-16">Depoimentos</div>
+            <div class="text-[8.5rem] max-lg:hidden font-bold leading-none -mb-16">Depoimentos</div>
         </header>
-        <div class="grid grid-cols-4 gap-8">
+        <div class="grid lg:grid-cols-4 gap-8">
             @foreach (range(1, 4) as $i)
                 <x-ui::card class="text-center">
                     <div>

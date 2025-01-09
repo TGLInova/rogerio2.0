@@ -3,7 +3,7 @@
         <x-ui::h2 variant="large" class="mb-12 text-center">
             Conteúdo do Treinamento
         </x-ui::h2>
-        <div class="grid grid-cols-4 gap-8">
+        <div class="grid lg:grid-cols-4 grid-cols-1 gap-8">
             @foreach (range(1, 4) as $n)
                 <x-ui::card variant="neutral" class="space-y-5">
                     <h3 class="font-bold text-5xl text-center">Dia {!! $n !!}</h3>

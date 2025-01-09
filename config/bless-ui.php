@@ -110,6 +110,7 @@ return [
             'variants' => [
                 'neutral' => ['bg-gradient-to-r from-neutral-200 to-neutral-900'],
                 'primary' => ['bg-primary-500 text-white'],
+                'primary-600' => ['bg-primary-600 text-white']
             ]
         ],
 

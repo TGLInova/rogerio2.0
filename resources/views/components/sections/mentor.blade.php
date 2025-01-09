@@ -1,6 +1,6 @@
 <section class="text-neutral-600 overflow-hidden bg-gradient-to-r from-neutral-100 via-neutral-100 to-neutral-300" x-data="{ animate: false }"
 x-intersect:leave="animate = false" x-intersect:enter.half="animate = true">
-<x-ui::container class="relative grid grid-cols-2 gap-8">
+<x-ui::container class="relative grid lg:grid-cols-2 gap-8">
     <div class="space-y-6 text-lg py-12 lg:py-20 duration-1000 delay-500" x-bind:class="{'opacity-0 ' : !animate}">
         <x-ui::h2 class="mb-8" :variant="['large']">
             Conheça seu mentor
@@ -21,7 +21,7 @@ x-intersect:leave="animate = false" x-intersect:enter.half="animate = true">
         </x-ui::button>
     </div>
     <img x-bind:class="animate ? 'animate-fade-up' : 'opacity-0'" src="{{ asset('static/img/rogerio_2.webp') }}"
-        class="duration-500 absolute h-[94%] right-0 bottom-0 drop-shadow-[15px_5px_25px]">
+        class="duration-500 lg:absolute h-[94%] right-0 bottom-0 drop-shadow-[15px_5px_25px] object-contain object-bottom">
     <div class="relative" x-bind:class="animate ? 'animate-fade-up animate-delay-500' : 'opacity-0'">
         <x-ui.speaker-box class="-right-16 bottom-32" :image="asset('static/img/icatu.webp')" />
         <x-ui.speaker-box class="-right-16 bottom-64" :image="asset('static/img/allianz.webp')" />

@@ -5,7 +5,7 @@
             com o treinamento mais completo do mercado?
         </x-ui::h2>
 
-        <div class="grid grid-cols-2 gap-16">
+        <div class="grid lg:grid-cols-2 gap-16">
             @foreach ($items as $item)
                 <div class="h-full border p-6 rounded-2xl relative flex flex-col items-center justify-center">
                     <x-ui::h3 class='text-center mb-5'>{{ $item['title'] }}:</x-ui::h3>
