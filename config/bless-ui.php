@@ -20,10 +20,11 @@ return [
         ],
 
         'button' => [
-            'base'   => ['px-5 py-2 duration-500 inline-flex outline-none', 'rounded-xl'],
+            'base'   => ['px-5 py-2 duration-500 inline-flex outline-none', 'rounded-lg'],
             'variants' => [
                 'normal'    => 'bg-neutral-200 text-neutral-600',
-                'primary-400' => 'bg-primary-400 text-white border shadow-[0_0_7px_2px] shadow-primary-400',
+                'primary-300' => 'bg-primary-300 text-white  shadow-[0_0_10px] shadow-primary-300',
+                'primary-400' => 'bg-primary-400 text-white border hover:shadow-[0_0_7px_2px] shadow-primary-400',
                 'primary'   => 'bg-primary-500 hover:bg-primary text-white border',
             ]
         ],
@@ -107,15 +108,23 @@ return [
         'section' => [
             'base' => 'py-12 lg:py-20',
             'variants' => [
-                'normal' => []
+                'neutral' => ['bg-gradient-to-r from-neutral-200 to-neutral-900'],
+                'primary' => ['bg-primary-500 text-white'],
             ]
         ],
 
         'card' => [
-            'base' => ['shadow-md', 'rounded-md', 'p-8'],
+            'base' => ['shadow-md', 'px-4 py-6', 'group/card'],
             'variants' => [
-                'normal'  => ['bg-white dark:bg-neutral-800'],
-                'primary' => ['bg-primary text-white'],
+                'normal' => ['backdrop-blur-md border-2', 'rounded-md'],
+                'neutral'  => [
+                    'bg-neutral-200 hover:bg-primary-300 hover:text-white',
+                    'duration-500',
+                    'rounded-lg',
+                    'border-2 border-white',
+                    'shadow-lg',
+                    'relative',
+                ]
             ]
         ],
 
@@ -159,16 +168,18 @@ return [
         ],
         'h2' => [
             'base' => [
-                'text-3xl',
             ],
             'variants' => [
-                'normal' => 'font-semibold'
+                'normal' => ['font-semibold', 'text-3xl'],
+                'large'  => ['font-semibold', 'text-5xl']
             ]
         ],
 
         'h3' => [
-            'base' => 'text-4xl',
-            'variants' => []
+            'base' => 'text-2xl',
+            'variants' => [
+                'normal' => 'font-bold'
+            ]
         ],
 
         'h4' => [
