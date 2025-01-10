@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+    .brazil-map{
+        & .map-state{
+            @apply fill-zinc-400 cursor-pointer hover:fill-primary-500 duration-300 [&.active]:fill-primary-300;
+        }
+
+        & .map-state-label{
+            @apply fill-white;
+        }
+    }
+}

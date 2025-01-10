@@ -23,3 +23,22 @@
         </div>
     </x-ui::container>
 </x-ui::section>
+<x-ui::section x-data="{image: null, state: null}" x-on:brazil-map-state-change.window="image = $event.detail.image; state = $event.detail.state">
+    <x-ui::container>
+        <div class="grid lg:grid-cols-5 items-center">
+            <div class="lg:col-span-2">
+                <x-ui::h2 class="mb-6">Datas e Locais</x-ui::h2>
+                <div class="shadow shadow-neutral-400 bg-white p-3 rounded-xl space-y-4">
+                    <img class="h-40 w-full object-cover object-center rounded-lg overflow-hidden" x-bind:src="image" />
+                    <header>
+                        <div class="font-bold text-xl">15 e 16 de agosto</div>
+                        <h4 x-text="state" class="text-xl"></h4>
+                    </header>
+                </div>
+            </div>
+            <div class="lg:col-span-3">
+                <x-ui.brazil-map />
+            </div>
+        </div>
+    </x-ui::container>
+</x-ui::section>
