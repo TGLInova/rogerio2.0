@@ -20,10 +20,10 @@ return [
         ],
 
         'button' => [
-            'base'   => ['px-5 py-2 duration-500 inline-flex outline-none', 'rounded-lg'],
+            'base'   => ['px-5 py-2 duration-500 inline-flex outline-none justify-center', 'rounded-lg'],
             'variants' => [
                 'normal'    => 'bg-neutral-200 text-neutral-600',
-                'primary-300' => 'bg-primary-300 text-white  shadow-[0_0_10px] shadow-primary-300',
+                'primary-300' => 'bg-primary-300 text-white  ',
                 'primary-400' => 'bg-primary-400 text-white border hover:shadow-[0_0_7px_2px] shadow-primary-400',
                 'primary'   => 'bg-primary-500 hover:bg-primary text-white border',
             ]

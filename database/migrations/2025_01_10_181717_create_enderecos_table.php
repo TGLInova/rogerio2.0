@@ -11,8 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
+        Schema::dropIfExists('enderecos');
+
         Schema::create('enderecos', function (Blueprint $table) {
             $table->id();
+            $table->string('cep', 9)->index();
+            $table->string('logradouro', 255)->nullable();
+            $table->string('numero', 10)->nullable();
+            $table->string('bairro', 100)->nullable();
+            $table->string('cidade', 100)->nullable();
+            $table->char('uf', 2)->nullable()->index();
+            $table->string('complemento', 255)->nullable();
+            $table->nullableMorphs('model');
             $table->timestamps();
         });
     }

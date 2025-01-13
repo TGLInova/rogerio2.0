@@ -10,7 +10,9 @@
         "blade-ui-kit/blade-icons": "^1.7",
         "filament/filament": "^3.2",
         "laravel/framework": "^11.31",
+        "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
+        "leandrocfe/filament-ptbr-form-fields": "3.0.8",
         "livewire/livewire": "^3.5",
         "wallacemaxters/bless-ui": "^0.1.2"
     },

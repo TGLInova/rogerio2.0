@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
 
-        Usuario::firstOrNew([
+        Usuario::firstOrCreate([
             'email' => 'wallacemaxters@gmail.com',
         ], [
             'nome' => 'Wallace',
