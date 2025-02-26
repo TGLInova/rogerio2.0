@@ -1,4 +1,4 @@
-<x-ui::section>
+{{-- <x-ui::section>
     <x-ui::container>
         <x-ui::h2 variant="large" class="mb-12 text-center">
             Conteúdo do Treinamento
@@ -23,7 +23,7 @@
             @endforeach
         </div>
     </x-ui::container>
-</x-ui::section>
+</x-ui::section> --}}
 <x-ui::section x-data="{ image: null, state: null, events: [] }"
     x-on:brazil-map-state-change.window="image = $event.detail.image; state = $event.detail.state; events = $event.detail.events">
     <x-ui::container>

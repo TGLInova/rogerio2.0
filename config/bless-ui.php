@@ -172,14 +172,16 @@ return [
             ],
             'variants' => [
                 'normal' => ['font-semibold', 'text-3xl'],
-                'large'  => ['font-semibold', 'text-5xl']
+                'large'  => ['font-semibold', 'text-5xl'],
+                'metalic' => ['bg-gradient-to-b from-gray-200 to-gray-500 text-transparent bg-clip-text'],
+                'golden' => ['bg-gradient-to-b from-yellow-500 to-yellow-900 text-transparent bg-clip-text']
             ]
         ],
 
         'h3' => [
             'base' => 'text-2xl',
             'variants' => [
-                'normal' => 'font-bold'
+                'normal' => 'font-semibold'
             ]
         ],
 

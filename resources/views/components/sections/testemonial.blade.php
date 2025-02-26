@@ -2,9 +2,9 @@
     <x-ui::container class="space-y-8">
         <header class='text-center'>
             <x-ui::h2>
-                Veja o que as pessoas impactadas dizem
+                O que diz quem já viveu essa transformação:
             </x-ui::h2>
-            <div class="text-[8.5rem] max-lg:hidden font-bold leading-none -mb-16">Depoimentos</div>
+            <div class="text-[4.5rem] max-lg:hidden font-bold leading-none bg-gradient-to-b from-yellow-500 to-yellow-900 text-transparent bg-clip-text">Depoimentos</div>
         </header>
         <div class="grid lg:grid-cols-4 gap-8">
             @foreach (range(1, 4) as $i)
