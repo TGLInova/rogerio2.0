@@ -1,7 +1,7 @@
 <x-layouts.main>
     <x-sections.hero>
-        <img src="{{ asset('static/img/logo.svg') }}" class="w-48">
-        <h1 class="sr-only">Mentoria TOPO</h1>
+        <img src="{{ asset('static/img/logo.svg') }}" class="w-56 inline-block">
+        <h1 class="sr-only">Propósito Seguro</h1>
         <h2 class="animate-fade-up text-4xl">
             Descubra como vender <span class="font-semibold">Seguro de Vida e Previdência Privada com Propósito</span> em
             1º lugar e assim Construir uma
