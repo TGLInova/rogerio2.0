@@ -16,6 +16,7 @@
     },
     "dependencies": {
         "rellax": "^1.12.1",
+        "swiper": "^11.2.5",
         "tailwindcss-animated": "^1.1.2"
     }
 }

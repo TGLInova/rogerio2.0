@@ -62,4 +62,6 @@
             Garantir minha inscrição
         </x-ui::button>
     </x-sections.hero> --}}
+
+    <x-sections.footer />
 </x-layouts.main>
