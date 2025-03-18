@@ -13,9 +13,10 @@ return [
     'components' => [
 
         'container' => [
-            'base'   => 'px-5 lg:px-0 max-w-6xl mx-auto w-full',
+            'base'   => 'px-5 lg:px-0  mx-auto w-full',
             'variants' => [
-                'normal' => []
+                'normal' => ['max-w-6xl'],
+                'compact' => 'max-w-3xl'
             ]
         ],
 
@@ -24,7 +25,7 @@ return [
             'variants' => [
                 'normal'    => 'bg-neutral-200 text-neutral-600',
                 'primary-300' => 'bg-primary-300 text-white  ',
-                'primary-400' => 'bg-primary-400 text-white border hover:shadow-[0_0_7px_2px] shadow-primary-400',
+                'primary-400' => 'bg-primary-400 text-white hover:shadow-[0_0_7px_2px] shadow-primary-400',
                 'primary'   => 'bg-primary-500 hover:bg-primary text-white border',
             ]
         ],
@@ -110,7 +111,8 @@ return [
             'variants' => [
                 'neutral' => ['bg-gradient-to-r from-neutral-200 to-neutral-900'],
                 'primary' => ['bg-primary-500 text-white'],
-                'primary-600' => ['bg-primary-600 text-white']
+                'primary-600' => ['bg-primary-600 text-white'],
+                'primary-gradient' => 'bg-gradient-to-b from-primary-500 to-primary-600 text-white'
             ]
         ],
 

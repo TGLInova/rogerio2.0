@@ -1,9 +1,9 @@
 <x-ui::section>
     <x-ui::container class="grid lg:grid-cols-2 gap-8 items-center">
         <div class="space-y-6 flex flex-col lg:items-start">
-            <x-ui::h3 class="text-primary-300 max-lg:text-center">
+            <x-ui::h2 class="text-primary-300 max-lg:text-center">
                 O que você vai receber
-            </x-ui::h3>
+            </x-ui::h2>
 
             <ul class="[&>li]:flex [&>li>svg]:text-primary-400 [&>li]:items-center [&>li]:gap-2 space-y-4">
                 <li><x-icon name="icon-check" class="h-6 w-6" /><span>Dois dias de imersão presencial com conteúdo 100% prático;<span></li>
