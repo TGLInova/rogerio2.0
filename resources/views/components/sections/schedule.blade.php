@@ -34,7 +34,7 @@ $item_2 = [
                 <header class="flex gap-12 items-center mb-6">
                     <h3 class="text-5xl font-semibold">Dia 1</h3>
                     <p class="border-2 px-6 py-1 rounded-lg text-center text-sm">
-                        Sexta e Sábado - Manhã e tarde
+                        Sexta - Manhã e tarde
                     </p>
                 </header>
                 <ul class="space-y-3 mb-6 grow">
@@ -52,7 +52,7 @@ $item_2 = [
             <div class="p-6 shadow-lg shadow-black/30 bg-gradient-to-b from-primary-400 to-primary-500 text-white rounded-xl flex flex-col">
                 <header class="flex gap-12 items-center mb-6">
                     <h3 class="text-5xl font-semibold">Dia 2</h3>
-                    <p class="border-2 px-6 py-1 rounded-lg text-center text-sm"> Domingo - Manhã, de<br>8:00 as 13 horas.</p>
+                    <p class="border-2 px-6 py-1 rounded-lg text-center text-sm">Sábado, de<br>8:00 as 13 horas.</p>
                 </header>
                 <ul class="space-y-3 mb-6 grow">
                     @foreach($item_2 as [$hour, $text])
