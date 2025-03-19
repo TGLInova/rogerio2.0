@@ -1,6 +1,6 @@
-<div class="bg-gradient-to-b from-primary-500 to-primary-600 text-white pt-12 lg:pt-20 overflow-hidden">
+<div class="bg-gradient-to-b from-primary-500 to-primary-600 text-white pt-12 lg:pt-20 overflow-hidden"  x-data='{ animate: false }' x-intersect.half:leave="animate = false" x-intersect.half:enter="animate = true">
     <x-ui::container class="text-center">
-        <header class="space-y-9 lg:mb-20 mb-12">
+        <header class="space-y-9 lg:mb-20 mb-12" x-bind:class="{'*:animate-fade' : animate }">
             <x-ui::h2 :variant="['golden', 'large']">
                 Bônus Exclusivo
             </x-ui::h2>
@@ -11,6 +11,6 @@
                 QUERO ME INSCREVER
             </x-ui::button>
         </header>
-        <img src="{{ asset('static/img/checkup.webp') }}" data-rellax-xs-speed="0" data-rellax-speed="-0.05" alt="App Check-Up Financeiro" class="rellax w-full lg:h-[31rem] object-contain object-center" width="1098" height="498">
+        <img src="{{ asset('static/img/checkup.webp') }}" x-bind:class="{'animate-fade' : animate }" alt="App Check-Up Financeiro" class="animate-delay-300 w-full lg:h-[31rem] object-contain object-center" width="1098" height="498">
     </x-ui::container>
 </div>

@@ -47,8 +47,8 @@
 
         <!-- as vagas são -->
 
-        <x-icon name="icon-alert" class="w-64 mx-auto block" />
-        <x-ui::h2 class="text-center -translate-y-14" :variant="['large', 'metalic']">
+        <x-icon name="icon-alert" class="w-64 mx-auto block !-mb-16" />
+        <x-ui::h2 class="text-center " :variant="['large', 'metalic']">
             <div>As vagas são limitadas!</div>
             <div>(30 vagas por região)</div>
         </x-ui::h2>

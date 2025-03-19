@@ -24,8 +24,8 @@
     <x-sections.material-presentation />
     <x-sections.schedule />
     <x-sections.testemonial />
-    <x-sections.why-online />
     <x-sections.immersion />
+    <x-sections.why-online />
     <x-sections.guarantee />
     <x-sections.bonus />
     <x-sections.training-content />

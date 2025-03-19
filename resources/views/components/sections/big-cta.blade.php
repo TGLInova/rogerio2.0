@@ -55,7 +55,7 @@
             Você aprenderá a:
         </x-ui::h2>
 
-        <div class="grid lg:grid-cols-4 gap-12 mb-8">
+        <div class="grid lg:grid-cols-4 grid-cols-2 gap-12 mb-8">
             @foreach ($items as $item)
                 <div class="text-center relative flex flex-col items-center border-2 rounded-lg p-5 duration-500 hover:scale-105">
                     <div class="h-12 w-12 bg-primary-400 p-2 rounded-lg -mt-12 mb-4">

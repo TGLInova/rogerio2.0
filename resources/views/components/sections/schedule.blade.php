@@ -23,18 +23,18 @@ $item_2 = [
 ];
 
 @endphp
-<x-ui::section>
+<x-ui::section x-data='{ animate: false }' x-intersect:leave="animate = false" x-intersect:enter="animate = true">
     <x-ui::container>
-        <x-ui::h2 class="text-center text-primary-300 mb-12" variant="large">
+        <x-ui::h2 class="text-center text-primary-300 mb-12" variant="large" x-bind:class="{ 'animate-fade-up': animate }">
             Você está pronto<br>para transformar sua carreira?
         </x-ui::h2>
 
-        <div class="grid lg:grid-cols-2 gap-16 lg:px-12 px-8">
+        <div class="grid lg:grid-cols-2 gap-16 lg:px-12 px-8" x-bind:class="{'*:animate-fade-up *:animate-delay-200': animate }">
             <div class="p-6 shadow-lg shadow-black/30 text-primary-300 bg-gradient-to-b from-white via-white to-neutral-300 rounded-xl flex flex-col">
                 <header class="flex gap-12 items-center mb-6">
                     <h3 class="text-5xl font-semibold">Dia 1</h3>
                     <p class="border-2 px-6 py-1 rounded-lg text-center text-sm">
-                        Sábado - Manhã e tarde
+                        Sexta e Sábado - Manhã e tarde
                     </p>
                 </header>
                 <ul class="space-y-3 mb-6 grow">

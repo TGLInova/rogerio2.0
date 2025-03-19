@@ -170,11 +170,10 @@ return [
             ]
         ],
         'h2' => [
-            'base' => [
-            ],
+            'base' => [],
             'variants' => [
                 'normal' => ['font-semibold', 'text-3xl'],
-                'large'  => ['font-semibold', 'text-5xl'],
+                'large'  => ['font-semibold', 'lg:text-5xl text-4xl'],
                 'metalic' => ['bg-gradient-to-b from-gray-200 to-gray-500 text-transparent bg-clip-text'],
                 'golden' => ['bg-gradient-to-b from-yellow-500 to-yellow-900 text-transparent bg-clip-text']
             ]
