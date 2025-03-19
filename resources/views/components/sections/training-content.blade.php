@@ -13,13 +13,13 @@
                             <h4 x-text="item.endereco.cidade + ' - ' + item.endereco.uf" class="text-xl"></h4>
                         </header>
                         <div class="text-neutral-600">
-                            <h5 x-text="item.local" class="text-xl font-semibold"></h5>
+                            <h5 x-text="item.nome" class="text-xl font-semibold"></h5>
                             <div
                                 class="text-base"
                                 x-text="[item.endereco.logradouro, item.endereco.numero, item.endereco.complemento, item.endereco.bairro, item.endereco.cidade, item.endereco.uf].join(' - ')">
                             </div>
                         </div>
-                        <x-ui::button variant="primary-300" class="w-full">
+                        <x-ui::button variant="primary-400" class="w-full" href="" x-bind:href="item.url" target="_blank">
                             QUERO ME INSCREVER
                         </x-ui::button>
                     </div>

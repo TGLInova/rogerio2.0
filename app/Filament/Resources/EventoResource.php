@@ -19,13 +19,14 @@ class EventoResource extends Resource
 {
     protected static ?string $model = Evento::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-tag';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Fc\TextInput::make('local')->columnSpanFull()->required(),
+                Fc\TextInput::make('nome')->label('Evento')->columnSpanFull()->required(),
+                Fc\TextInput::make('url')->label('Link do Ingresso')->url(),
 
                 Fc\Fieldset::make()->columns(4)->relationship('endereco')->schema([
                     Cep::make('cep')->viaCep(setFields: [
@@ -53,8 +54,7 @@ class EventoResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('local')
-                    ->searchable(),
+                Tables\Columns\TextColumn::make('nome')->label('Evento')->searchable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -69,11 +69,6 @@ class EventoResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
-            ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
             ]);
     }
 

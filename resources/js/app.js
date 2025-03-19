@@ -70,11 +70,17 @@ Alpine.data("brazilMap", function () {
         events: [],
         async init() {
             this.events = (await axios.get('/api/eventos')).data;
+
+            const states = Object.keys(this.events);
+
+            states.length > 0 && this.select(states[0])
         },
         containsEvent(state) {
             return this.events[state]
         },
         select(state) {
+
+            console.log(state)
 
             root.querySelectorAll('a').forEach(el => el.classList.remove('active'))
 
