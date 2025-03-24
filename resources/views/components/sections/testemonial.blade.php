@@ -19,10 +19,10 @@
             'imagem' => asset('static/img/samuel.webp'),
         ],
         [
-            'titulo' => 'Foi muito bom!!',
-            'texto' => 'Mesmo!! Muito obrigada por compartilhar conosco!!❤️❤️❤️',
-            'autor' => 'Bárbara Oliveira',
-            'imagem' => asset('static/img/babi.barbara.oliveira.webp'),
+            'titulo' => 'Parabéns Rogério pela palestra!',
+            'texto' => 'Vamos com toda certeza colher resultados positivos dos seus ensinamentos.',
+            'autor' => 'Rogério Cavarzan',
+            'imagem' => asset('static/img/rogeriocavarzan.webp'),
         ],
     ];
 @endphp
@@ -40,11 +40,11 @@
         <x-ui::swiper options="{ slidesPerView: 1.8, breakpoints: { 800: { slidesPerView: 4 } } }">
             @foreach ($items as $k => $item)
                 <x-ui::swiper.item>
-                    <x-ui::card class="text-center animate-delay-[var(--delay)]"
+                    <x-ui::card class="text-center animate-delay-[var(--delay)] h-64 flex flex-col"
                         style="--delay: {{ $k * 100 + 300 }}ms" x-bind:class="{ 'animate-fade': animate }">
-                        <div>
+                        <div class="grow">
                             <q>
-                                <span class='text-xl'>{{ $item['titulo'] }}</span>
+                                <span class='text-xl leading-none'>{{ $item['titulo'] }}</span>
                                 <br><br>
                                 {{ $item['texto'] }}
                             </q>
