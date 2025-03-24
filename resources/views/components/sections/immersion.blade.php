@@ -64,9 +64,9 @@
         <div class="border-2 border-neutral-300 rounded-lg p-12 space-y-8 bg-primary-500 max-w-2xl mx-auto">
             <p class="text-2xl bg-gradient-to-b from-white to-neutral-400 text-transparent bg-clip-text">Agora que você sabe como vai escalar suas vendas de Seguro de Vida, chegou a hora de você colocar em prática!</p>
             <div>
-                <div>De R$ 5.000,00 por</div>
-                <div class="text-6xl font-semibold">10X de R$ 219,90</div>
-                <div class="font-semibold">ou R$ 2199 à vista</div>
+                {{-- <div>De R$ 5.000,00 por</div> --}}
+                <div class="text-6xl font-semibold">até 12x R$ 245,73</div>
+                <div class="font-semibold">ou R$ 2.376,00</div>
             </div>
             <x-ui::button variant="primary-400" href="#inscrever">
                 GARANTIR MINHA VAGA!
