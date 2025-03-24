@@ -24,3 +24,7 @@
         @apply bg-neutral-100 px-4 py-1.5 rounded font-semibold text-black shadow-sm shadow-black/30;
     }
 }
+
+[x-cloak]{
+    @apply opacity-0;
+}

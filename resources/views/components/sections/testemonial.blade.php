@@ -18,12 +18,12 @@
             'autor' => 'Saulo Gabriel',
             'imagem' => asset('static/img/samuel.webp'),
         ],
-        // [
-        //     'titulo' => 'Agradecemos por essa',
-        //     'texto' => 'parceria forte que nos ajuda a cuidar de quem mais importa: nossos clientes. 💙🚀',
-        //     'autor' => 'Allianz Brasil',
-        //     'imagem' => asset('static/img/allianz.webp'),
-        // ],
+        [
+            'titulo' => 'Foi muito bom!!',
+            'texto' => 'Mesmo!! Muito obrigada por compartilhar conosco!!❤️❤️❤️',
+            'autor' => 'Bárbara Oliveira',
+            'imagem' => asset('static/img/babi.barbara.oliveira.webp'),
+        ],
     ];
 @endphp
 <x-ui::section class="grow" variant="primary" x-data='{ animate: false }' x-intersect:leave="animate = false"
