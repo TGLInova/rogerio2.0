@@ -12,7 +12,7 @@
                 <li><x-icon name="icon-check" class="h-6 w-6" /><span>Networking com profissionais de alto desempenho;<span></li>
             </ul>
 
-            <x-ui::button variant="primary-400" class="animate-delay-400">
+            <x-ui::button variant="primary-400" class="animate-delay-400" href="#inscrever">
                 GARANTIR A MINHA INSCRIÇÃO
             </x-ui::button>
 

@@ -68,8 +68,8 @@
                 <div class="text-6xl font-semibold">10X de R$ 219,90</div>
                 <div class="font-semibold">ou R$ 2199 à vista</div>
             </div>
-            <x-ui::button variant="primary-400">
-                GARANTIR A MINHA INSCRIÇÃO
+            <x-ui::button variant="primary-400" href="#inscrever">
+                GARANTIR MINHA VAGA!
             </x-ui::button>
         </div>
     </x-ui::container>

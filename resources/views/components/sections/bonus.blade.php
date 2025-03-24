@@ -8,7 +8,7 @@
             <p class="text-xl">Desenvolvida com a expertise adquirida ao longo de 20 anos, esta ferramenta personalizável
                 gera um relatório financeiro inicial do seu segurado em menos de 1 minuto.</p>
             <x-ui::button variant="primary-400">
-                QUERO ME INSCREVER
+                GARANTIR MINHA VAGA!
             </x-ui::button>
         </header>
         <img src="{{ asset('static/img/checkup.webp') }}" x-bind:class="{'animate-fade' : animate }" alt="App Check-Up Financeiro" class="animate-delay-300 w-full lg:h-[31rem] object-contain object-center" width="1098" height="498">

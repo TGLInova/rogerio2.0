@@ -18,12 +18,12 @@
             'autor' => 'Saulo Gabriel',
             'imagem' => asset('static/img/samuel.webp'),
         ],
-        [
-            'titulo' => 'Agradecemos por essa',
-            'texto' => 'parceria forte que nos ajuda a cuidar de quem mais importa: nossos clientes. 💙🚀',
-            'autor' => 'Allianz Brasil',
-            'imagem' => asset('static/img/allianz.webp'),
-        ],
+        // [
+        //     'titulo' => 'Agradecemos por essa',
+        //     'texto' => 'parceria forte que nos ajuda a cuidar de quem mais importa: nossos clientes. 💙🚀',
+        //     'autor' => 'Allianz Brasil',
+        //     'imagem' => asset('static/img/allianz.webp'),
+        // ],
     ];
 @endphp
 <x-ui::section class="grow" variant="primary" x-data='{ animate: false }' x-intersect:leave="animate = false"
@@ -59,8 +59,8 @@
         </x-ui::swiper>
 
         <div class="text-center">
-            <x-ui::button variant="primary-400" class='text-lg' x-bind:class="{ 'animate-jump-in': animate }">
-                QUERO ME INSCREVER
+            <x-ui::button variant="primary-400" class='text-lg' x-bind:class="{ 'animate-jump-in': animate }" href="#inscrever">
+                GARANTIR MINHA VAGA!
             </x-ui::button>
         </div>
     </x-ui::container>

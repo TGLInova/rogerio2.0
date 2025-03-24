@@ -79,8 +79,8 @@
                 É um treinamento estratégico que une o seu Propósito
                 a uma maior rentabilidade.</div>
         </x-ui::h2>
-        <x-ui::button variant="primary-400" x-bind:class="{ 'animate-fade-up animate-delay-1000': animate }">
-            QUERO ME INSCREVER
+        <x-ui::button variant="primary-400" x-bind:class="{ 'animate-fade-up animate-delay-1000': animate }" href="#inscrever">
+            GARANTIR MINHA VAGA!
         </x-ui::button>
     </x-ui::container>
 </x-ui::section>

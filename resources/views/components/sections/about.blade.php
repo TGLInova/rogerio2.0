@@ -26,8 +26,8 @@
                 Agora, ele quer levar você a esse mesmo nível, para que juntos possamos transformar o nosso mercado!
             </p>
 
-            <x-ui::button variant='primary-400' class="animate-delay-[800ms]">
-                ME INSCREVER
+            <x-ui::button variant='primary-400' class="animate-delay-[800ms]" href="#inscrever">
+                GARANTIR MINHA VAGA!
             </x-ui::button>
         </div>
         <img x-bind:class="animate ? 'animate-fade-up' : 'opacity-0'"

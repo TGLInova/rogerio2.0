@@ -62,7 +62,7 @@ $item_2 = [
                         </li>
                     @endforeach
                 </ul>
-                <x-ui::button class="w-full" variant="primary-400">QUERO ME INSCREVER</x-ui::button>
+                <x-ui::button class="w-full" variant="primary-400" href="#inscrever">QUERO ME INSCREVER</x-ui::button>
             </div>
         </div>
     </x-ui::container>

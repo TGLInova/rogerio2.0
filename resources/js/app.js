@@ -15,7 +15,9 @@ Alpine.data('swiper', function (options = {}) {
 
     const el = this.$el;
 
-    el.classList.add('swiper', 'swiper-container')
+    el.classList.add('swiper')
+
+    const elContainer = el.closest('.swiper-container')
 
     const swiper = new Swiper(this.$el, {
         modules: [Navigation, Pagination, Autoplay],
@@ -33,10 +35,12 @@ Alpine.data('swiper', function (options = {}) {
         },
 
         pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
+            el: elContainer.querySelector('.swiper-pagination'),
             clickable: true,
+            type: 'custom',
+            renderCustom: (swiper, current, total) => `<div class="swiper-pagination-container">${current} de ${total}</div>`
         },
+
 
 
 

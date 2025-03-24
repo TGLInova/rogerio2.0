@@ -13,4 +13,14 @@
             @apply fill-white;
         }
     }
+
+}
+
+.swiper-pagination-custom{
+    --swiper-pagination-bottom: -24px;
+    @apply justify-center items-center flex bottom-0;
+
+    > .swiper-pagination-container{
+        @apply bg-neutral-100 px-4 py-1.5 rounded font-semibold text-black shadow-sm shadow-black/30;
+    }
 }
