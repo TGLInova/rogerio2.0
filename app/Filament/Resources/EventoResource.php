@@ -25,9 +25,10 @@ class EventoResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
+            ->columns(1)
             ->schema([
                 Fc\TextInput::make('nome')->label('Evento')->columnSpanFull()->required(),
-                Fc\TextInput::make('url')->label('Link do Ingresso')->url(),
+                Fc\TextInput::make('url')->label('Link do Ingresso')->url()->prefixIcon('heroicon-o-link'),
 
                 Fc\Fieldset::make()->columns(4)->relationship('endereco')->schema([
                     Cep::make('cep')->required()->viaCep(setFields: [
@@ -44,9 +45,11 @@ class EventoResource extends Resource
                     Forms\Components\TextInput::make('uf')->label('UF')->required(),
                 ]),
 
-                Fc\Repeater::make('datas')->relationship()->columnSpanFull()->grid(3)->simple(
-                    Fc\DatePicker::make('data')->required()
-                )
+                Fc\Fieldset::make()->schema([
+                    Fc\Repeater::make('datas')->relationship()->columnSpanFull()->grid(3)->simple(
+                        Fc\DatePicker::make('data')->required()
+                    )
+                ])
             ]);
 
     }

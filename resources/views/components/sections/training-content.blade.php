@@ -2,10 +2,9 @@
     x-on:brazil-map-state-change.window="image = $event.detail.image; state = $event.detail.state; events = $event.detail.events"
     id="inscrever">
     <x-ui::container>
-        <div class="grid lg:grid-cols-5 gap-8 items-center">
+        <div class="grid lg:grid-cols-5 grid-cols-1 gap-8 items-center">
             <div class="lg:col-span-2">
                 <x-ui::h2 class="mb-6">Datas e Locais</x-ui::h2>
-
                 <template x-if="events.length">
                     <x-ui::swiper options="{ slidesPerView: 1 }" :pagination="true">
                         <template x-for="item in events">
