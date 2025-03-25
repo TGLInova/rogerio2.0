@@ -1,4 +1,6 @@
-<x-layouts.main>
+<x-layouts.main
+    :image="asset('/static/img/banner_bg.webp')"
+    description="Aprenda como os corretores mais bem sucedidos do Brasil usam propósito, atendimento consultivo, estratégia e inteligência emocional para transformar vendas em relações duradouras e carteiras recorrentes.">
     <x-sections.heading />
     {{-- <x-sections.parceiros /> --}}
     <x-sections.big-cta />

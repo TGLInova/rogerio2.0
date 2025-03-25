@@ -20,7 +20,7 @@ class Base extends Component
         public ?string $bodyClass = null
     )
     {
-        //
+        $this->canonical ??= url()->current();
     }
 
     /**
