@@ -23,7 +23,7 @@
     <x-ui::container class="text-center">
         <x-ui::h2 class="mb-12" :variant="['large', 'metalic']" x-bind:class="{ 'animate-fade-up': animate }">
             Você já sentiu que poderia impactar<br>
-            ainda mais a vida dos seus clientes?
+            ainda mais a vida dos seus clientes...
         </x-ui::h2>
 
         <div class="text-xl space-y-6" x-bind:class="{ 'animate-fade-up animate-delay-200': animate }">
