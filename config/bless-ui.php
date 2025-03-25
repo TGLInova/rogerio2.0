@@ -107,7 +107,7 @@ return [
 
 
         'section' => [
-            'base' => 'py-12 lg:py-20',
+            'base' => 'py-16 lg:py-20',
             'variants' => [
                 'neutral' => ['bg-gradient-to-r from-neutral-200 to-neutral-900'],
                 'primary' => ['bg-primary-500 text-white'],

@@ -6,7 +6,7 @@
     <x-ui::container>
         <div class='max-lg:relative grid lg:grid-cols-2 gap-12 max-lg:text-center'>
             <div style="--bg-image: url({{ asset('static/img/rogerio_araujo_5.webp') }})"
-                class="bg-[image:--bg-image] bg-no-repeat lg:bg-[position:80%_center] lg:bg-[length:auto_100%] bg-contain bg-center lg:absolute lg:h-full h-96 w-full left-0 top-0">
+                class="bg-[image:--bg-image] bg-no-repeat lg:bg-[position:80%_center] max-lg:order-last lg:bg-[length:auto_100%] bg-contain bg-center lg:absolute lg:h-full h-96 w-full left-0 top-0">
             </div>
             <div class="space-y-9 relative">
                 <x-ui::h2 :variant="['metalic', 'large']" class="leading-none max-lg:text-center">
