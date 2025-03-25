@@ -30,7 +30,7 @@ class EventoResource extends Resource
                 Fc\TextInput::make('url')->label('Link do Ingresso')->url(),
 
                 Fc\Fieldset::make()->columns(4)->relationship('endereco')->schema([
-                    Cep::make('cep')->viaCep(setFields: [
+                    Cep::make('cep')->required()->viaCep(setFields: [
                         'logradouro' => 'logradouro',
                         'uf'         => 'uf',
                         'bairro'     => 'bairro',
