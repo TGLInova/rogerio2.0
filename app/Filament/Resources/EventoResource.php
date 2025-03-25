@@ -14,6 +14,7 @@ use Leandrocfe\FilamentPtbrFormFields\Cep;
 use App\Filament\Resources\EventoResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\EventoResource\RelationManagers;
+use Filament\Tables\Columns\TextColumn;
 
 class EventoResource extends Resource
 {
@@ -55,11 +56,15 @@ class EventoResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('nome')->label('Evento')->searchable(),
+                TextColumn::make('endereco.cidade')->label('Cidade'),
+                TextColumn::make('texto_datas')->badge()->label('Datas'),
                 Tables\Columns\TextColumn::make('created_at')
+                    ->label('Data de Criação')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
                 Tables\Columns\TextColumn::make('updated_at')
+                    ->label('Data de Atualização')
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
