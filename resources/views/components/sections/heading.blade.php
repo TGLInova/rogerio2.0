@@ -16,16 +16,10 @@
                 <img src="{{ asset('static/img/logo.svg') }}" class="w-56 inline-block">
                 <h1 class="sr-only">Propósito Seguro</h1>
                 <h2 class="animate-fade-up text-4xl">
-                    Descubra como vender <span class="font-semibold">Seguro de Vida e Previdência Privada com
-                        Propósito</span> em
-                    1º lugar e assim Construir uma
-                    Carreira Lucrativa.
+                    Você vende seguros ou já começou a transformar vidas?
                 </h2>
                 <p class="animate-fade-up animate-delay-300">
-                    Participe da imersão de 2 dias com Rogério Araújo, um dos maiores especialistas do mercado, e domine
-                    a
-                    metodologia consultiva que transforma vendas em uma missão, Cuidar e Proteger de Vidas, Famílias e
-                    Negócios.
+                    Aprenda como os corretores mais bem sucedidos do Brasil usam propósito, atendimento consultivo, estratégia e inteligência emocional para transformar vendas em relações duradouras e carteiras recorrentes.
                 </p>
                 <x-ui::button variant="primary-400" class="animate-fade-up animate-delay-500" href="#inscrever">
                     GARANTIR MINHA VAGA!
@@ -33,7 +27,7 @@
             </div>
             <div class="flex items-center justify-center relative" x-cloak>
                 <tempate x-if="event">
-                    <a class="flex gap-3 items-center" x-bind:href="event.url" target="_blank">
+                    <a class="flex gap-3 items-center hover:" x-bind:href="event.url" target="_blank">
                         <div class="px-4 py-2 text-base border rounded flex flex-col backdrop-blur-sm bg-primary-500/30 uppercase w-52">
                             <span x-text="event.texto_datas"></span>
                             <span x-text="event.endereco.cidade"></span>
