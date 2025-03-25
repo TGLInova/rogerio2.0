@@ -7,8 +7,8 @@
     <x-ui::container class='grow'>
         <div class='grid lg:grid-cols-2 lg:gap-16 gap-6 max-lg:text-center h-full'>
             <figure
-                class="lg:absolute max-lg:order-last top-0 h-full lg:left-1/2 animate-fade-up animate-delay-1000 pointer-events-none">
-                <img src="{{ asset('static/img/rogerio_araujo_3.webp') }}" class='h-full lg:object-contain object-cover object-center'>
+                class="lg:absolute max-lg:order-last lg:top-0 h-full lg:left-1/2 animate-fade-up animate-delay-1000 pointer-events-none">
+                <img src="{{ asset('static/img/rogerio_araujo_3.webp') }}" class='h-full w-full lg:object-contain object-cover'>
             </figure>
 
             <div class="relative space-y-8">
