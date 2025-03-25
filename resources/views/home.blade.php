@@ -1,6 +1,6 @@
 <x-layouts.main>
     <x-sections.heading />
-    <x-sections.parceiros />
+    {{-- <x-sections.parceiros /> --}}
     <x-sections.big-cta />
     <x-sections.about />
     <x-sections.material-presentation />
