@@ -6,7 +6,7 @@
 
     .brazil-map{
         & .map-state{
-            @apply opacity-15 [&.has-event]:opacity-100 cursor-pointer hover:fill-primary-500 duration-300 [&.active]:fill-primary-300;
+            @apply opacity-15 [&.has-event]:opacity-100 cursor-pointer hover:fill-primary-500 duration-300 [&.active]:fill-primary-400;
         }
 
         & .map-state-label{

@@ -1,8 +1,6 @@
 <x-ui::section
     variant="primary-600"
-    class="relative overflow-hidden"
-    x-data="{ y: 0, event: null, state: null, image: null }"
-    x-on:brazil-map-state-change.window="event = $event.detail.events[0]; state = $event.detail.state; image = $event.detail.image;">
+    class="relative overflow-hidden">
     <div style="--bg-image: url({{ asset('/static/img/banner_bg.webp') }})"
         class="absolute top-0 left-0 h-full w-full mix-blend-overlay animate-fade lg:bg-contain bg-no-repeat bg-right bg-[image:--bg-image]">
     </div>
@@ -25,8 +23,12 @@
                     GARANTIR MINHA VAGA!
                 </x-ui::button>
             </div>
-            <div class="flex items-center justify-center relative" x-cloak>
-                <tempate x-if="event">
+            <div
+                class="flex items-center justify-center relative"
+                x-cloak
+                x-data="{ event: null, state: null, image: null }"
+                x-on:brazil-map-state-change.window="event = $event.detail.events[0]; state = $event.detail.state; image = $event.detail.image;">
+                <template x-if="event">
                     <a class="flex gap-3 items-center hover:" x-bind:href="event.url" target="_blank">
                         <div class="px-4 py-2 text-base border rounded flex flex-col backdrop-blur-sm bg-primary-500/30 uppercase w-52">
                             <span x-text="event.texto_datas"></span>
@@ -34,7 +36,7 @@
                         </div>
                         <img x-bind:src="image" class="w-20 rounded">
                     </a>
-                </tempate>
+                </template>
             </div>
         </div>
     </x-ui::container>

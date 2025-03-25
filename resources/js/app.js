@@ -83,12 +83,9 @@ Alpine.data("brazilMap", function () {
             return this.events[state]
         },
         select(state) {
-
-            console.log(state)
-
             root.querySelectorAll('a').forEach(el => el.classList.remove('active'))
 
-            this.$el.classList.add('active');
+            this.$refs[state].classList.add("active")
 
             this.$dispatch('brazil-map-state-change', {
                 state,
