@@ -1,7 +1,7 @@
-<section class="text-neutral-600 overflow-hidden bg-gradient-to-r from-neutral-100 via-neutral-100 to-neutral-300 max-lg:h-screen"
+<section class="text-neutral-600 overflow-hidden bg-gradient-to-r from-neutral-100 via-neutral-100 to-neutral-300 max-lg:min-h-screen"
     x-data="{ animate: false }" x-intersect.half:leave="animate = false" x-intersect.half:enter="animate = true">
     <x-ui::container class="relative grid lg:grid-cols-2 grid-cols-1 lg:gap-16 gap-6" >
-        <div class="space-y-5 text-lg py-8 lg:py-20" x-bind:class="animate ? '*:animate-fade' : 'opacity-0'">
+        <div class="space-y-5 text-lg py-12 lg:py-20" x-bind:class="animate ? '*:animate-fade' : 'opacity-0'">
             <x-ui::h2 class="mb-8 text-primary-300" :variant="['large']">
                 <div class="text-base">Quem é </div>
                 Rogério Araújo?

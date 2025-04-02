@@ -1,6 +1,6 @@
 <x-ui::section
     variant="primary-600"
-    class="relative overflow-hidden max-lg:h-screen flex flex-col !pb-0">
+    class="relative overflow-hidden max-lg:min-h-screen flex flex-col !pb-0">
     <div style="--bg-image: url({{ asset('/static/img/banner_bg.webp') }})"
         class="absolute top-0 left-0 h-full w-full mix-blend-overlay animate-fade lg:bg-contain bg-cover bg-no-repeat bg-right bg-[image:--bg-image]">
     </div>

@@ -13,7 +13,7 @@ return [
     'components' => [
 
         'container' => [
-            'base'   => 'px-5 lg:px-0  mx-auto w-full',
+            'base'   => 'px-8 lg:px-0  mx-auto w-full',
             'variants' => [
                 'normal' => ['max-w-6xl'],
                 'compact' => 'max-w-3xl'
