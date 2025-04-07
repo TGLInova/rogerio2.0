@@ -27,7 +27,7 @@
                                         class="w-full"
                                         x-bind:href="item.url"
                                         href=""
-                                        x-on:lick="fbq('track', 'Purchase', { value: 497, currency: 'BRL' })"
+                                        x-on:lick="fbq('track', 'Lead')"
                                         target="_blank">
                                         ME INSCREVER!
                                     </x-ui::button>
