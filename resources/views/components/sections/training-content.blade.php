@@ -6,7 +6,7 @@
             <div class="lg:col-span-2">
                 <x-ui::h2 class="mb-6">Datas e Locais</x-ui::h2>
                 <template x-if="events.length">
-                    <x-ui::swiper options="{ slidesPerView: 1 }" :pagination="true">
+                    <x-ui::swiper options="{ slidesPerView: 1, preventClicks: false, preventClicksPropagation: false }" :pagination="true">
                         <template x-for="item in events">
                             <x-ui::swiper.item>
                                 <div class="shadow shadow-neutral-400 bg-neutral-200 p-6 rounded-xl space-y-8">
@@ -22,8 +22,13 @@
                                             x-text="[item.endereco.logradouro, item.endereco.numero, item.endereco.complemento, item.endereco.bairro, item.endereco.cidade, item.endereco.uf].join(' - ')">
                                         </div>
                                     </div>
-                                    <x-ui::button variant="primary-400" class="w-full" href=""
-                                        x-bind:href="item.url" target="_blank">
+                                    <x-ui::button
+                                        variant="primary-400"
+                                        class="w-full"
+                                        x-bind:href="item.url"
+                                        href=""
+                                        x-on:lick="fbq('track', 'Purchase', { value: 497, currency: 'BRL' })"
+                                        target="_blank">
                                         ME INSCREVER!
                                     </x-ui::button>
                                 </div>
