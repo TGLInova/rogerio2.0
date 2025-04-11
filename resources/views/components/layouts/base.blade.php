@@ -30,28 +30,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
 
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1801541184026276');
-        fbq('track', 'PageView');
-    </script>
+            fbq('init', '576151954817709');
+            fbq('track', 'PageView');
+        </script>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     {{ $head ?? '' }}
@@ -60,9 +50,7 @@
 </head>
 
 <body @class(['antialiased min-h-full flex flex-col w-full', $bodyClass])>
-    <!-- Meta Pixel Code -->
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1801541184026276&ev=PageView&noscript=1" /></noscript>
-    <!-- End Meta Pixel Code -->
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=576151954817709&ev=PageView&noscript=1"/></noscript>
     {{ $slot }}
     @livewireScriptConfig
 </body>
